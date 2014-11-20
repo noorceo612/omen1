@@ -15,4 +15,4 @@ myApp.controller("TodoCtrl", function($scope) {
 		$scope.todos.push(temp);
 	};
 
-});
+}); fuck off
