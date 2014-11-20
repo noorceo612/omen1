@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="js/day2ang.js"></script>
+<script src="json/planet.json"></script>
+</head>
+<body>
+<!-- <h4>Ques 3</h4>
+<div ng-controller='ctrl'>
+	<ul style="list-style:none;">
+		<li ng-repeat="person in persons">
+		<ul ng-repeat="(key,value)in person">
+		{{key}}: <input type='text' ng-model='person[key]'>
+		</ul>		</li>
+	</ul>
+	
+	<button ng-click="saveChanges()">update</button>
+	{{persons}}
+</div>
+ -->
+
+ <h4>Ques 4</h4>
+<div ng-controller='ctrl2'>
+		<img ng-src={{image[photo]}} width="900" height="600"></img>
+		<button ng-click="next()">Next.</button>
+		<button ng-click="pre()">Prev.</button>
+	</div> 
+	
+<h4>ques.5</h4>
+  <div ng-controller="ctrl3">
+  
+    <ul style="list-style:none;">
+      <li ng-repeat="planet in planets | planetSorter track by $index" >
+       {{planet}}
+      </li>
+    </ul>
+
+  </div>
+
+</body>
+</html>

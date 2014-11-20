@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="js/ang1112.js"></script>
+</head>
+<body>
+	<div ng-controller='hell2'>
+		{{colors}} <input type="text" ng-model='yes'>
+		<button ng-click='add()'>add</button>
+		<ul>
+			<li ng-repeat='item in colors' style='color: {{item}}'>{{item}}
+				<button ng-click='del($index)'>delete</button>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<div ng-controller='hell3'>
+	<ul>
+			<li ng-repeat='food in oder'>
+			{{food.name}}
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

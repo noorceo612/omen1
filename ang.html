@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<meta charset="ISO-8859-1">
+<title>1st day ang. Q</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="js/ang.js"></script>
+<link rel="stylesheet" href="css/ang.css">
+</head>
+<body>
+	{{5+5}}
+	<div ng-controller='hell'>
+		<button ng-click='hello()'>click here to say hello</button>
+		<p ng-show='p1'>Hello</p>
+		<br>
+		<div id="sq1" style="border-radius: {{x}}"></div>
+		<button ng-click='con()'>click to change</button>
+	</div> 
+	
+	
+<div ng-controller='hell2'>
+	<ul>
+		<li ng-repeat='item in colors' 
+		style='color:{{item}}'>{{item}}
+		<button ng-click='colors.splice($index,1)'>delete</button>
+		</li>
+
+	</ul>
+	</div> 
+	
+
+
+</body>
+
+</html>
